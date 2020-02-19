@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side WebRTC code samples">
+  <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
+  <meta itemprop="name" content="WebRTC code samples">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+
+  <!-- 
+    HTML <base> 요소는 문서 안의 모든 상대 URL이 사용할 기준 URL을 지정한다. 
+    문서에는 하나의 <base> 요소만 존재할 수 있다.
+  -->
+  <base target="_blank">
+  <title>getUserMedia</title>
+  <style>
+    body {
+      padding: 1rem;
+    }
+    #container {
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    h1 {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    video {
+      width: 100%;
+      min-height: 300px;
+      img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Get User Media</h1>
+    <!-- 
+      비디오 태그 자동 재생 이슈를 해결하기 위해서 playsinline 속성을 추가해 주어야 한다.
+    -->
+    <video id="gum-local" poster="../images/sample.jpg" autoplay playsinline></video>
+    <button id="showVideo">Open camera</button>
+
+    <div id="errorMsg"></div>
+
+    
+  </div>
+
+  <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+  <script src="./main.js"></script>
+</body>
+</html>
