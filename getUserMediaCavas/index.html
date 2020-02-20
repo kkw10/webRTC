@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side WebRTC code samples">
+  <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
+  <meta itemprop="name" content="WebRTC code samples">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+  <base target="_blank">
+  <title>getUserMediaCanvas</title>
+  <style>
+    body {
+      padding: 1rem;
+    }
+    #container {
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    h1 {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    video {
+      width: 100%;
+      min-height: 300px;
+      img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Get User Media Canvas</h1>
+    <video poster="../images/sample.jpg" autoplay playsinline></video>
+    <button>Take snapshot</button>
+    <canvas></canvas>  
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
